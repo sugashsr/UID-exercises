@@ -1,0 +1,44 @@
+<!DOCTYPE hmtl>
+  <html>
+    <head>
+            <style>
+                body
+                {
+                    background-image:url("bround.jfif");
+					background-repeat:no-repeat;
+                    background-size:cover;
+                }
+                .page{
+				  background-color:#628E90;
+                  padding: 10px;
+                  border-radius: 20px;
+				}
+            </style>
+      <script>
+          function find() {
+              let text = "The Fossil Gen 5 LTE is the best Fossil smartwatch with LTE. ";
+              let n = text.search(/Gen/i);
+              document.getElementById("demo1").innerHTML = "Gen found at : " + n;
+          }
+
+          function rplace() {
+              let text = document.getElementById("demo2").innerHTML;
+              document.getElementById("demo2").innerHTML = text.replace(/good/i, "excellent");
+          }
+      </script>
+	</head>
+	<body>
+        <a style="text-decoration: none;color:black" href="../index.html"><p>MAIN</p></a>
+	   <center>
+	     <div class="page"><a href="index.html" style="text-decoration:none;border-radius:20px; color:white;padding:20px;">Mouse Events</a></div><br><br>
+         <div class="container block">
+            <h2>FOSSIL </h2>
+            <h3>The Fossil Gen 5 LTE is the best Fossil smartwatch with LTE.</h3>
+            <p>To find position of Gen <button onclick="find()">Click Me </button>
+			<p id="demo1"></p>
+            <h3 id="demo2">value, quality, and style go Fossil Watches are certainly good watches. </h3>
+            <p>To replace good with excellent <button onclick="rplace()">Click Me</button> </p>
+         </div>
+      </center>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<link rel="shortcut icon" href="https://www.freefavicon.com/freefavicons/objects/airplane-152-237853.png">
+<title>Login</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: red;
+  }
+</style>
+
+<body bgcolor=powderblue>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="fair.html">Fair Details</a></li>
+    <li style="float:right"><a href="contact.html">Contact</a></li>
+    <li style="float:right"><a href="login.html"class="active">Login</a></li>
+    <li style="float:right"><a href="register.html">Register</a></li>
+
+  </ul>
+  <br> <br>
+<body>
+<center>
+ <form method="post" name="myform" onsubmit="return validatef()" action="logins.php">
+         User ID : <input type = "text" name = "username"  minlength=6 >
+         <br><br>
+         Password: <input type = "password" name = "password" minlength=6 >
+         <br><br>
+         <input type = "submit" name = "submit"> &nbsp&nbsp
+         <input type = "reset" name = "reset">
+      </form>
+</center>
+</body>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link rel="shortcut icon" href="https://www.freefavicon.com/freefavicons/objects/airplane-152-237853.png">
+</head>
+
+<body>
+
+</body>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: red;
+  }
+</style>
+
+<body>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="fair.html">Fair Details</a></li>
+    <li style="float:right"><a href="about.html" class="active">Contact</a></li>
+    <li style="float:right"><a href="login.html">Login</a></li>
+    <li style="float:right"><a href="register.html">Register</a></li>
+
+  </ul>
+  <center>
+    <b></b><h2>Contact</h2></b>
+  </center>
+<div class="test" style="border-radius:5px;background-color:#f2f2f2;padding:30px;">
+ <label for="fname" class="test">Name :</label>
+  <input type="text" class="test" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname" class="test">Email ID :</label>
+  <input type="text" class="test" id="lname" name="emaiid" placeholder="Your email id..">
+
+  <label for="country" class="test">Country</label>
+  <select id="country" class="test" name="country">
+    <option value="usa">India</option>
+    <option value="usa">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+  <br><br>
+  <label for="subject">Subject :</label>
+  <br>
+    <textarea id="subject" name="subject" placeholder="Write something.." rows="10" cols="50"     ></textarea>
+  <br><br>
+  <center>
+    <button type="button" name="button">Submit</button>
+  </center>
+
+
+</html>
