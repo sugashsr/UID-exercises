@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+   <head>
+       <title>Registration Form</title>
+   </head>
+   <link rel="stylesheet" href="styles_home.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+   <style>
+    .container{
+    color: #aa1442;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 470px;
+    margin: 20px;
+    padding: 60px 70px;
+}
+.block{ 
+    background-color: #ffffff8d;
+    padding: 15px ;
+    margin-top: 18%;
+    border-radius: 20px;
+    box-shadow: 0 100px 100px rgba(0,0,0,0.3);
+}
+body{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('amrita1.jpg');
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+  background-color: #aa1442;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border-color: #aa1442;
+}
+   </style>
+   <body > 
+    <div class="logo">
+      <div class="nav">
+        
+        <a href="form_event.html.html"><img src="Register.jpeg" height="30px" width="150px" style="border-radius:4px;padding-top:10px;"></a><br>
+        <a href="#Contact">CONTACT</a>
+        <a href="Campus_Map.html">CAMPUS MAP</a>
+        <a href="events.html">EVENT</a>
+        <a href="Amrita_Cybernation.html">HOME</a>
+      </div>
+      <br>
+    </div>
+    <p style="font-size:25px;background-color: #1d2248;">AMRITA <font style="color:#D3004C">CYBERNATION </font>2'k22</p>
+    <p style="font-size:15px;padding:0px 0px 0px 150px;background-color: #1d2248;" ><i>-towards Self-reliance in strengthening our Cyberspace</i></p><br>
+      
+ 
+        <div class="container block">
+          <form>
+                <h1 align="center">Amrita CyberNation (ACN) 2022</h1>
+                <table style="border-collapse:separate;
+                border-spacing:0 15px;column-gap: 40px;font-weight: bold;">
+                    <tr><td> Firstname:  </td>
+              <td><input type="text" name="firstname" placeholder= "Firstname" size="15" required /></td></tr> 
+              <tr><td> Lastname: </td><td>  
+              <input type="text" name="lastname" placeholder="Lastname" size="15"required /></td></tr> 
+              <tr>
+                <label><td> 
+                Gender :</td><td>
+                <input type="radio" value="Male" id="g1" name="gender" selected>
+                <label for="g1">Male</label>
+                <input type="radio" value="Female" id="g2" name="gender"> 
+                <label for="g1">Female</label>
+                </td>
+              </tr>
+              <tr>
+                <td>DOB</td>
+                <td><input type="date"></td>
+              </tr>
+              <tr> 
+                <td>Category :</td>
+                <td>
+                <select>
+                <option value="Event" selected disables hidden>Category</option>
+                <option value="Students">Students - 200 Rs</option>
+                <option value="Research">Research Scholars/Faculty Members - 500 Rs</option>
+                <option value="Industry">Industry/Others - 1000 Rs</option>
+                </select></td></tr>
+                <tr>
+              <tr><td>Events</td><td><input type="checkbox" id="e1" >
+                <label for="e1"> Cyber Conclave '22</label>
+                <input type="checkbox" id="e2">
+                <label for="e2"> Cyber Industry Meet '22</label><br>
+                <input type="checkbox" id="e3">
+                <label for="e3">Amrita Tech Fest '22</label>
+                <input type="checkbox" id="e4">
+                <label for="e4">Cyber Abyaan '22</label></td></tr>
+              <div> 
+              <td>Phone :</td>
+              </label> 
+              <td><input type="text" placeholder="Phone no." size="10" pattern="{0-9}"/ required></td></tr>
+              <tr><td>Project Details</td>
+              <td><textarea cols="50" rows="3" placeholder="Project Details"required></textarea></td></tr>
+              <tr> <td>ID Proof (max 5MB)</td></label>
+              <td>&nbsp;&nbsp;<input type="file" name="idproof"></td></tr>
+              <tr><td>Password</td><td><input type="password"></td></tr>
+              <tr><td><button class="button">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button class="button"type="reset">Reset</button></td></tr>
+    </table>
+    
+</form>
+</div>
+   <img src="eve.png" style="position:absolute;right:15%;top:30%;height:450px;width:350px">
+   </body>
+</html>
